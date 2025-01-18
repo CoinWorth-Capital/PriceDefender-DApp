@@ -36,6 +36,6 @@ Intended for large holders of tokens with between $1M and $500M USD market cap
 - Gamma.xyz supports Uniswap and QuickSwap, 50M TVL primarliy on BNB Chain, Arbitrum, and Polygon. They offer enterprise strategy consulting, their apps aim to maximize profitability and minimize impermanent loss. Only offer double-sided liquidity provision.
 - Revert.finance supports 1M TVL primarily on Uniswap, Sushiswap, Pancakeswap, allows for collateralizing LP positions, automatically moving LP to be in a tight range, provides a feature called auto-exit, allows for backtesting LP positions. Revert has a great UI but still only allows for double sided liquidity provision. Additionally, their concentrated auto adjustments will result in impermanent losses.
 
-### Similar Services, Whale-Focused Position Tools
+### Similar Services, Position Automation Tools
 - solautobot.com offers automated trade execution for SPL tokens on Solana, including limit orders. Integrated with top exchanges like Raydium, Jupiter, and Orca.
 - Cryptohopper.com offers automated trading with similar tools to Binance, that includes trend-following bots and market-making
