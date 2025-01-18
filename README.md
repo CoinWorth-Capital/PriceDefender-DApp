@@ -23,7 +23,7 @@ Intended for large holders of tokens with between $1M and $500M USD market cap
 - Whale can manually refill Price Defender with USDC and optionally update criteria for triggers, and the process can repeat
 
 ### Tech Stack
-- Should the prototype be built on Ethereum Mainnet, or Base?
+- Should the prototype be built on Ethereum Mainnet or Base?
 - Does this require a telegram bot?
 
 ### Risks and Vulnerabilities
