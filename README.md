@@ -32,7 +32,8 @@ Intended for large holders of tokens with between $1M and $500M USD market cap
 - Can this tool, if it becomes mainstream enough, lead to a specific type of price manipulation?
 - Why not just use limit orders? Is the added complexity of supplying single-sided LP worth it?
 
-### Similar Services, Automated Liquidity Management (Ethereum Ecosystem)
+### Similar Services, Automated Liquidity Management
+- Goosefx.io/ssl offers "single sided liquidity provision" on Solana, but it's just a market maker effectively that you have to give up 50% of fees to
 - Gamma.xyz supports Uniswap and QuickSwap, 50M TVL primarliy on BNB Chain, Arbitrum, and Polygon. They offer enterprise strategy consulting, their apps aim to maximize profitability and minimize impermanent loss. Only offer double-sided liquidity provision.
 - Revert.finance supports 1M TVL primarily on Uniswap, Sushiswap, Pancakeswap, allows for collateralizing LP positions, automatically moving LP to be in a tight range, provides a feature called auto-exit, allows for backtesting LP positions. Revert has a great UI but still only allows for double sided liquidity provision. Additionally, their concentrated auto adjustments will result in impermanent losses.
 
