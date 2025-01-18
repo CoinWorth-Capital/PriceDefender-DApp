@@ -15,6 +15,7 @@ Intended for large holders of tokens with between $1M and $500M USD market cap
 - Does single-sided liquidity provision offer value to these market actors?
 - What kind of structure would make them the most comfortable trusting their funds to this project?
 - What benefit of this protocol is most exciting for users? Is it adding stability to a coin they like, or accumulating at good prices while being paid fees to do so?
+- By adding lending protocol use at the strat, leverage or hedging can be achieved, making this maneuver more profitable if price recovers or closer to delta neutral.
 
 ### Prototype Proof-of-Concept
 - Memecoin whale who believes in medium/long term price appreciation commits 25% or so of his USD value in memecoin A into this prototype in the form of USDC
