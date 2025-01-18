@@ -38,5 +38,11 @@ Intended for large holders of tokens with between $1M and $500M USD market cap
 - Revert.finance supports 1M TVL primarily on Uniswap, Sushiswap, Pancakeswap, allows for collateralizing LP positions, automatically moving LP to be in a tight range, provides a feature called auto-exit, allows for backtesting LP positions. Revert has a great UI but still only allows for double sided liquidity provision. Additionally, their concentrated auto adjustments will result in impermanent losses.
 
 ### Similar Services, Position Automation Tools
+- Gelato.network/web3-functions offers triggers for automation with smart contracts, EVM only
 - solautobot.com offers automated trade execution for SPL tokens on Solana, including limit orders. Integrated with top exchanges like Raydium, Jupiter, and Orca.
 - Cryptohopper.com offers automated trading with similar tools to Binance, that includes trend-following bots and market-making
+
+### Tools For Building This
+- Uniswap’s SDK: Use @uniswap/v3-sdk for advanced liquidity management
+- Alchemy Webhooks: Set up real-time notifications for liquidity changes
+- Third-Party Libraries: Platforms like Gelato automate liquidity operations on Uniswap
