@@ -1,5 +1,5 @@
 # PriceDefender-DApp
-App to explore automated single-sided liquidity support for ERC-20 tokens via Uniswap API
+App to explore automated single-sided liquidity support for ERC-20 tokens via Uniswap API.  
 Intended for large holders of tokens with between $1M and $500M USD market cap
 
 ### Problem Statement
