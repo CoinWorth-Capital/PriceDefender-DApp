@@ -44,5 +44,6 @@ Intended for large holders of tokens with between $1M and $500M USD market cap
 
 ### Tools For Building This
 - Uniswap’s SDK: Use @uniswap/v3-sdk for advanced liquidity management
+- Orca's pools feature allows for concentrated liquidity, but it's still double sided. Same thing for Crema Finance and Raydium.
 - Alchemy Webhooks: Set up real-time notifications for liquidity changes
 - Third-Party Libraries: Platforms like Gelato automate liquidity operations on Uniswap
