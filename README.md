@@ -23,13 +23,15 @@ Intended for large holders of tokens with between $1M and $500M USD market cap
 - After a set time, or all the liquidity provided is consumed, Price Defender will close the LP position and send whale all coin balances
 - Whale can manually refill Price Defender with USDC and optionally update criteria for triggers, and the process can repeat
 
-### Tech Stack
-- Should the prototype be built on Ethereum Mainnet or Base?
-- Does this require a telegram bot?
+### Minimal Tech Stack
+- A Base L2 Solidity deployment of the core smart contract, which manages deposits, interacts with Uniswap, returns funds to user wallet
+- A price oracle to connect to the smart contract, via Chainlink feeds or Uniswap's Subgraph, checks prices
+- A basic node.js front end to show balances and activity logs
+- An optional backend with TypeScript/Node.ts if required
 
 ### Risks and Vulnerabilities
 - Does this make the whale more vulnerable to rug-pull or large exits by others?
-- How can this smart contract code be secured appropriately?
+- How can this code be secured appropriately?
 - Can this tool, if it becomes mainstream enough, lead to a specific type of price manipulation?
 - Why not just use limit orders? Is the added complexity of supplying single-sided LP worth it?
 
@@ -45,6 +47,7 @@ Intended for large holders of tokens with between $1M and $500M USD market cap
 
 ### Tools For Building This
 - Uniswap’s SDK: Use @uniswap/v3-sdk for advanced liquidity management
+- Base <> Chainlink Integration: https://docs.base.org/tutorials/oracles-chainlink-price-feeds/
 - Orca's pools feature allows for concentrated liquidity, but it's still double sided. Same thing for Crema Finance and Raydium.
 - Alchemy Webhooks: Set up real-time notifications for liquidity changes
 - Third-Party Libraries: Platforms like Gelato automate liquidity operations on Uniswap
