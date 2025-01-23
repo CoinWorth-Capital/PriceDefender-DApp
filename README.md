@@ -1,6 +1,6 @@
 # PriceDefender-DApp
 App to explore automated single-sided liquidity support for ERC-20 tokens via Uniswap API
-Intended for large holders of tokens with between $1M and $500M USD market cap
+Intended for large holders of tokens with between $1M and $500M USD market cap. A modified version can also be built on Solana.
 
 ### Problem Statement
 - Downside volatility is a dramatic risk for medium and long term holders of memecoin assets
