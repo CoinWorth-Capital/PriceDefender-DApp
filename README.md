@@ -34,6 +34,7 @@ Intended for large holders of tokens with between $1M and $500M USD market cap. 
 - How can this code be secured appropriately?
 - Can this tool, if it becomes mainstream enough, lead to a specific type of price manipulation?
 - Why not just use limit orders? Is the added complexity of supplying single-sided LP worth it?
+- App first implementation can be cheaply security audited by https://app.chaingpt.org/ smart contract auditor feature.
 
 ### Similar Services, Automated Liquidity Management
 - Goosefx.io/ssl offers "single sided liquidity provision" on Solana, but it's just a market maker effectively that you have to give up 50% of fees to
