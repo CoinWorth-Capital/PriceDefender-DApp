@@ -8,15 +8,6 @@ Intended for large holders of tokens with between $1M and $500M USD market cap
 - Memecoin treasuries and whales seem to use liquidity provision without much strategy to achieve stability and growth for their assets
 - Accumulating coins via market orders costs the whale in transaction fees, but accumulating via single sided liquidity pays the whale fees
 
-### Key Questions
-- What offerings are currently available for automated liquidity provision?
-- How are these protocols used by whales and coin treasuries today?
-- What does optimal liquidity provision look like for coins between 1M and 500M USD market cap?
-- Does single-sided liquidity provision offer value to these market actors?
-- What kind of structure would make them the most comfortable trusting their funds to this project?
-- What benefit of this protocol is most exciting for users? Is it adding stability to a coin they like, or accumulating at good prices while being paid fees to do so?
-- By adding lending protocol use at the strat, leverage or hedging can be achieved, making this maneuver more profitable if price recovers or closer to delta neutral.
-
 ### Prototype Proof-of-Concept
 - Memecoin whale who believes in medium/long term price appreciation commits 25% or so of his USD value in memecoin A into this prototype in the form of USDC
 - If the specific trigger criteria for Price Defender is met (e.g. 10% decline in 6 hours), Price Defender will open a single-sided liquidity position on Uniswap V3 to support price and accumulate more tokens
@@ -28,6 +19,15 @@ Intended for large holders of tokens with between $1M and $500M USD market cap
 - A price oracle to connect to the smart contract, via Chainlink feeds or Uniswap's Subgraph, checks prices
 - A basic node.js front end to show balances and activity logs
 - An optional backend with TypeScript/Node.ts if required
+
+### Key Questions
+- What offerings are currently available for automated liquidity provision?
+- How are these protocols used by whales and coin treasuries today?
+- What does optimal liquidity provision look like for coins between 1M and 500M USD market cap?
+- Does single-sided liquidity provision offer value to these market actors?
+- What kind of structure would make them the most comfortable trusting their funds to this project?
+- What benefit of this protocol is most exciting for users? Is it adding stability to a coin they like, or accumulating at good prices while being paid fees to do so?
+- By adding lending protocol use at the strat, leverage or hedging can be achieved, making this maneuver more profitable if price recovers or closer to delta neutral.
 
 ### Risks and Vulnerabilities
 - Does this make the whale more vulnerable to rug-pull or large exits by others?
