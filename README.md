@@ -42,12 +42,12 @@ Intended for large holders of tokens with between $1M and $500M USD market cap
 
 ### Similar Services, Position Automation Tools
 - Gelato.network/web3-functions offers triggers for automation with smart contracts, EVM only
-- solautobot.com offers automated trade execution for SPL tokens on Solana, including limit orders. Integrated with top exchanges like Raydium, Jupiter, and Orca.
-- Cryptohopper.com offers automated trading with similar tools to Binance, that includes trend-following bots and market-making
+- Arrakis offers automatic rebalancing for V3 liquidity provision
 
 ### Tools For Building This
+- Uniswap V4 Hooks?
 - Uniswap’s SDK: Use @uniswap/v3-sdk for advanced liquidity management
 - Base <> Chainlink Integration: https://docs.base.org/tutorials/oracles-chainlink-price-feeds/
-- Orca's pools feature allows for concentrated liquidity, but it's still double sided. Same thing for Crema Finance and Raydium.
+- On Solana: Orca's pools feature allows for concentrated liquidity, but it's still double sided. Same thing for Crema Finance and Raydium.
 - Alchemy Webhooks: Set up real-time notifications for liquidity changes
 - Third-Party Libraries: Platforms like Gelato automate liquidity operations on Uniswap
