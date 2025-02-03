@@ -1,54 +1,32 @@
 # PriceDefender-DApp
 App to explore automated single-sided liquidity support for ERC-20 tokens via Uniswap API
-Intended for large holders of tokens with between $1M and $500M USD market cap. A modified version can also be built on Solana.
+Intended for large holders of tokens with between $1M and $500M USD market cap
+A modified version can also be built on Solana, using double-sided liquidity in small ranges
 
-### Problem Statement
+### Value Proposition
+- Makes tokens more attractive investments via support at key prices and healthy recoveries after declines 
+- Helps whales to defend key psychological price levels via liquidity automation
+- Helps whales acheive healthy recoveries after broader market downturns
+- Helps whales purchase quality assets at great prices
+
+### User Pain/Pleasure Points
 - Downside volatility is a dramatic risk for medium and long term holders of memecoin assets
 - Reducing downside volatility allows for trust and organic growth of their community
-- Memecoin treasuries and whales seem to use liquidity provision without much strategy to achieve stability and growth for their assets
+- Memecoin treasuries and whales use liquidity provision without strategies that could help achieve stability and growth for their assets
 - Accumulating coins via market orders costs the whale in transaction fees, but accumulating via single sided liquidity pays the whale fees
+- Coins that recover quickly and healthily from general market downturns become more attractive to investors
 
-### Prototype Proof-of-Concept
-- Memecoin whale who believes in medium/long term price appreciation commits 25% or so of his USD value in memecoin A into this prototype in the form of USDC
-- If the specific trigger criteria for Price Defender is met (e.g. 10% decline in 6 hours), Price Defender will open a single-sided liquidity position on Uniswap V3 to support price and accumulate more tokens
-- After a set time, or all the liquidity provided is consumed, Price Defender will close the LP position and send whale all coin balances
-- Whale can manually refill Price Defender with USDC and optionally update criteria for triggers, and the process can repeat
+### App Example Action Flow
+To begin:
+- Whale or Treasury deposits stablecoins into PD.
 
-### Minimal Tech Stack
-- A Base L2 Solidity deployment of the core smart contract, which manages deposits, interacts with Uniswap, returns funds to user wallet
-- A price oracle to connect to the smart contract, via Chainlink feeds or Uniswap's Subgraph, checks prices
-- A basic node.js front end to show balances and activity logs
-- An optional backend with TypeScript/Node.ts if required
+When market conditions are normal/bullish:
+- Memecoin whale who believes in medium/long term price appreciation of that token commits 20% of his USD value in memecoin A via USDC
+- If the specific trigger criteria for Price Defender is met (e.g. Hitting 1.1M in market cap, or 5% decline in 6 hours, etc.), Price Defender will open a single-sided liquidity position on Uniswap V3 to support price and accumulate more tokens
+- After a set time (e.g. 6 hours ) or all the liquidity provided is consumed, Price Defender will close the LP position and send whale all coin balances
 
-### Key Questions
-- What offerings are currently available for automated liquidity provision?
-- How are these protocols used by whales and coin treasuries today?
-- What does optimal liquidity provision look like for coins between 1M and 500M USD market cap?
-- Does single-sided liquidity provision offer value to these market actors?
-- What kind of structure would make them the most comfortable trusting their funds to this project?
-- What benefit of this protocol is most exciting for users? Is it adding stability to a coin they like, or accumulating at good prices while being paid fees to do so?
-- By adding lending protocol use at the strat, leverage or hedging can be achieved, making this maneuver more profitable if price recovers or closer to delta neutral.
-
-### Risks and Vulnerabilities
-- Does this make the whale more vulnerable to rug-pull or large exits by others?
-- How can this code be secured appropriately?
-- Can this tool, if it becomes mainstream enough, lead to a specific type of price manipulation?
-- Why not just use limit orders? Is the added complexity of supplying single-sided LP worth it?
-- App first implementation can be cheaply security audited by https://app.chaingpt.org/ smart contract auditor feature.
-
-### Similar Services, Automated Liquidity Management
-- Goosefx.io/ssl offers "single sided liquidity provision" on Solana, but it's just a market maker effectively that you have to give up 50% of fees to
-- Gamma.xyz supports Uniswap and QuickSwap, 50M TVL primarliy on BNB Chain, Arbitrum, and Polygon. They offer enterprise strategy consulting, their apps aim to maximize profitability and minimize impermanent loss. Only offer double-sided liquidity provision.
-- Revert.finance supports 1M TVL primarily on Uniswap, Sushiswap, Pancakeswap, allows for collateralizing LP positions, automatically moving LP to be in a tight range, provides a feature called auto-exit, allows for backtesting LP positions. Revert has a great UI but still only allows for double sided liquidity provision. Additionally, their concentrated auto adjustments will result in impermanent losses.
-
-### Similar Services, Position Automation Tools
-- Gelato.network/web3-functions offers triggers for automation with smart contracts, EVM only
-- Arrakis offers automatic rebalancing for V3 liquidity provision
-
-### Tools For Building This
-- Uniswap V4 Hooks?
-- Uniswap’s SDK: Use @uniswap/v3-sdk for advanced liquidity management
-- Base <> Chainlink Integration: https://docs.base.org/tutorials/oracles-chainlink-price-feeds/
-- On Solana: Orca's pools feature allows for concentrated liquidity, but it's still double sided. Same thing for Crema Finance and Raydium.
-- Alchemy Webhooks: Set up real-time notifications for liquidity changes
-- Third-Party Libraries: Platforms like Gelato automate liquidity operations on Uniswap
+When market conditions are short term corrective/bearish:
+- Price Defender detects that an overall market correction is happening, and waits to deploy LP to support price recovery
+- Single sided LP is deployed in a large buy range (e.g. 1M - 1.5M on a coin with historically 1-2M market cap)
+- This liquidity helps price recover more smoothly and improves coin's attractiveness to investors on screener sites
+- After a set time (e.g. 7 days ) or all the liquidity provided is consumed, Price Defender will close the LP position and send whale all coin balances
