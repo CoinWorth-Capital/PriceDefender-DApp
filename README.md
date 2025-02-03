@@ -18,7 +18,7 @@ A modified version can also be built on Solana, using double-sided liquidity in 
 
 ### App Example Action Flow
 To begin:
-- Whale or Treasury deposits stablecoins into PD.
+- Whale or Treasury deposits stablecoins into PD. This capital is deployed as LP when specific conditions are met.
 
 When market conditions are normal/bullish:
 - Memecoin whale who believes in medium/long term price appreciation of that token commits 20% of his USD value in memecoin A via USDC
