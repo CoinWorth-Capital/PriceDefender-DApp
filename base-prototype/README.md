@@ -12,6 +12,7 @@ Intended for large holders of tokens with between $1M and $500M USD market cap
 Focus on coding and testing the Solidity smart contract that:
 
 - Manages deposits/withdrawals.
+-- Setup approval process to allow the contract to transfer tokens from my wallet. This will require a simple ethers.js front end.
 - Integrates with price oracles (using Chainlink or Uniswap Subgraph).
 - Interacts with Uniswap v3 to manage liquidity positions.
 
