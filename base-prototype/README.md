@@ -8,12 +8,16 @@ Intended for large holders of tokens with between $1M and $500M USD market cap
 - A basic front end (React/TypeScript) to manage deposits/withdrawals, display balances and liquidity actions taken
 - (An optional backend with TypeScript/Node.js if required for additional automation)
 
+### Running in Remix
+- Must deploy USDC at address 0x0924225A898f369B79B57364Ed75b529A630A96d as IERC
+- Must approve ValueLock deployed at its address
+- You can now interact with ValueLock
+
 ### Next Step
-Focus on coding and testing the Solidity smart contract that:
+Focus on coding and testing the Solidity smart contracts that:
 
-- Manages deposits/withdrawals.
--- Setup approval process to allow the contract to transfer tokens from my wallet. This will require a simple ethers.js front end.
-- Integrates with price oracles (using Chainlink or Uniswap Subgraph).
-- Interacts with Uniswap v3 to manage liquidity positions.
+- Manages deposits/withdrawals
+- Interacts with Uniswap v3 to manage liquidity positions
+- Integrates with price oracles (using Chainlink or Uniswap Subgraph)
 
-By establishing a robust and thoroughly tested core, you set a strong foundation for integrating the front-end interface and any additional backend automation later. This approach minimizes risk and ensures that your project’s key functionalities are reliable before expanding into user experience improvements.
+

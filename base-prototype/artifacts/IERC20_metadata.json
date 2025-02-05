@@ -9,6 +9,49 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "recipient",
 						"type": "address"
 					},
@@ -87,11 +130,11 @@
 	},
 	"sources": {
 		"base-prototype/ValueLock.sol": {
-			"keccak256": "0xed342d719d340399b6dd5748a2227596fd25c52d4501b147805aefee2b9bbde5",
+			"keccak256": "0x7c38eb6123995668b7b5ebd0756dfc3c2d7ca2e814f4cba090b9e3192fc84937",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://4544230b1577612222f8228219e1bd293a03b57d39a6d30f6a809fd2dda6151e",
-				"dweb:/ipfs/QmPB29QzHbVYTCAnJyAgru826LQn2EsFzUG8ENhFAXtX2G"
+				"bzz-raw://3198936e21ff309e7304255a4abcc4da255cf869b2fb9675890801d3c4a8a306",
+				"dweb:/ipfs/QmWV5KnfSKm8FozK25nbGf9BKYb35RUgRYCG8kPR7ArKEU"
 			]
 		}
 	},
