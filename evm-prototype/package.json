@@ -1,0 +1,27 @@
+{
+  "name": "evm-prototype",
+  "version": "1.0.0",
+  "description": "price defender dapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoinWorth-Capital/PriceDefender-DApp.git"
+  },
+  "author": "CoinWorth Capital/James Burns <james@coinworth.capital> (http://coinworth.capital)",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/CoinWorth-Capital/PriceDefender-DApp/issues"
+  },
+  "homepage": "https://github.com/CoinWorth-Capital/PriceDefender-DApp#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.18"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.2.0",
+    "@uniswap/v3-periphery": "^1.4.4"
+  }
+}
