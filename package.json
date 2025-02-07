@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@uniswap/v4-core": "github:Uniswap/v4-core",
+    "@uniswap/v4-periphery": "github:Uniswap/v4-periphery"
+  }
+}

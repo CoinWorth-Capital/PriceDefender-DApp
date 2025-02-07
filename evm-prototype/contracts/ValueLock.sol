@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity 0.8.26;
+pragma solidity 0.8.20;
 
 interface IERC20 {
     function transferFrom(address sender, address recipient, uint amount) external returns (bool);

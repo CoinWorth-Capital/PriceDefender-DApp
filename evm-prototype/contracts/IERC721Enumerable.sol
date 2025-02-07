@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.26;
+pragma solidity ^0.8.20;
 
 interface IERC721Enumerable {
     // Returns the total amount of tokens stored by the contract
